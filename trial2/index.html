@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+<!-- https://cdnjs.com/libraries/font-awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+<link rel="stylesheet" href="style.css">
+<title>Trial2</title>
+</head>
+
+<body>
+    <div class="alert alert-warning alert-dismissible fade show " style="margin: 0; padding:0; " role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <div class="clearfix">
+            <button type="button" class="btn-close" style="margin: 0; padding:0; z-index:10; position:absolute;" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light" style="padding: 0; ">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand p-0"><img src="hunter.jpg" style="height: 50px; width:100px;"></a>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button type="button" class="btn btn-secondary"><i class="bi-search">Search</i></button>
+                    </div>
+                </form>
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">Master Tranning</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cources</a>
+                        <div class="dropdown-menu" style="z-index: 2;">
+                            <a href="#" class="dropdown-item">Pubg</a>
+                            <a href="#" class="dropdown-item">Call-of-Duty</a>
+                            <a href="#" class="dropdown-item">FreeFire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-nav">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin: right 10px;">
+                        Login
+                      </button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                        Sing-UP
+                      </button>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="faltu" style="height:50px;width:100%;background-color:black;">
+        <nav class="navbar navbar-expand-lg bg-light" style="width:100%;background: linear-gradient(to bottom right,#8992fa , #fc7878);position:absolute;z-index:5;">
+            <div class="container-fluid">
+                <div class="dropdown10">
+                    <button class="dropbtn1">Categories</button>
+                    <div class="dropdown-content10">
+                        <a href="#">Computer Programming</a>
+                        <a href="#">Computer Programming</a>
+                        <a href="#">Computer Programming</a>
+                        <a href="#">Computer Programming</a>
+                        <a href="#">Computer Programming</a>
+                        <a href="#">Computer Programming</a>
+                        <a href="#">Computer Programming</a>
+                        <a href="#">Computer Programming</a>
+                    </div>
+                </div>
+                <button class="navbar-toggler" style="border:2px solid yellow ;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                </span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i><b>All</b></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i><b>Cloud Computing</b></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i><b>Python</b></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i><b>Data-Structure</b></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i><b>Artificial Intelligence</b></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i><b>Mobile Development</b></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Modal Starting -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control-plaintext" id="staticEmail" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control-plaintext" id="staticEmail" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End -->
+    <!-- Crausal Starting -->
+    <div id="carouselExampleCaptions" style="width: 100%;" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="banner1.jpg" class="d-block w-100" alt="...">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <img src="banner2.jpg" class="d-block w-100" alt="...">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <img src="banner3.jpg" class="d-block w-100" alt="...">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div> -->
+            </div>
+        </div>
+        <button class="carousel-control-prev" style="opacity: 0;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" style="opacity: 0;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carousal Ends -->
+
+    <div class="row " style="width:80%;margin-left:10%;margin-top:-100px;z-index:10;">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BOX OVER SLIDER -->
+    <div class="h3" style="margin-left: 5%; margin-top:20px;margin-bottom:20px;">
+        <h3>Trending Courses</h3>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-light" style="width:95%;margin-left:2.5%;background: linear-gradient(to bottom right,#8992fa , #fc7878);position:absolute;z-index:5;">
+        <!-- Tabs navs -->
+        <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+            <li class="nav-item " role="presentation">
+                <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Tab 1</a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="ex1-tab-2"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-1"
+        role="tab"
+        aria-controls="ex1-tabs-2"
+        aria-selected="false"
+        >Tab 2</a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="ex1-tab-3"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-1"
+        role="tab"
+        aria-controls="ex1-tabs-3"
+        aria-selected="false"
+        >Tab 3</a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="ex1-tab-3"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-1"
+        role="tab"
+        aria-controls="ex1-tabs-3"
+        aria-selected="false"
+        >Tab 4</a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="ex1-tab-3"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-1"
+        role="tab"
+        aria-controls="ex1-tabs-3"
+        aria-selected="false"
+        >Tab 4</a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="ex1-tab-3"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-1"
+        role="tab"
+        aria-controls="ex1-tabs-3"
+        aria-selected="false"
+        >Tab 5</a
+      >
+    </li>
+  </ul>
+  <!-- Tabs navs -->
+  <!-- Tabs content -->
+    </nav>
+  <div class="tab-content" id="ex1-content">
+    <div
+      class="tab-pane fade show active"
+      id="ex1-tabs-1"
+      role="tabpanel"
+      aria-labelledby="ex1-tab-1"
+    >
+    </div>
+    <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+    </div>
+    <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+    </div>
+  </div>
+  <!-- Tabs content -->
+
+    <div class="course" style="height:700px;width: 95%;margin-left: 2.5%;background: linear-gradient(to bottom right, #5efae0, #edfd5d);z-index:2;">
+        <div class="flex-container" style="margin-top:6%;">
+            <div>
+                <h4>MASTER COURSE</h4>
+                <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, beatae?</h6>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus numquam totam distinctio voluptas adipisci porro rerum nam itaque repellat?</h6>
+            </div>
+            <div>
+                <h4>MASTER COURSE</h4>
+                <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, beatae?</h6>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus numquam totam distinctio voluptas adipisci porro rerum nam itaque repellat?</h6>
+            </div>
+            <div>
+                <h4>MASTER COURSE</h4>
+                <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, beatae?</h6>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, id impedit nostrum illo dolorum perferendis quaerat non vero commodi deserunt?</h6>
+            </div>
+            <div>
+                <h4>MASTER COURSE</h4>
+                <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, beatae?</h6>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus numquam totam distinctio voluptas adipisci porro rerum nam itaque repellat?</h6>
+            </div>
+        </div>
+        <div class="flex-container1">
+            <div>5</div>
+            <div class="HOVER">
+                <h3>CLASS STARTS</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, suscipit reiciendis eos error rem est ipsa accusamus aliquam? Quas, laboriosam.</h6>
+                <button type="submit" style="border:2px solid black;border-radius:20px;">Know More</button>
+            </div>
+            <div class="HOVER">
+                <h3>CLASS STARTS</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, suscipit reiciendis eos error rem est ipsa accusamus aliquam? Quas, laboriosam.</h6>
+                <button type="submit" style="border:2px solid black;border-radius:20px;">Know More</button></div>
+            <div class="HOVER">
+                <h3>CLASS STARTS</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, suscipit reiciendis eos error rem est ipsa accusamus aliquam? Quas, laboriosam.</h6>
+                <button type="submit" style="border:2px solid black;border-radius:20px;">Know More</button></div>
+        </div>
+        <div class="flex-container" style="margin-top:0.3%;">
+            <div>
+                <h4>MASTER COURSE</h4>
+                <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, beatae?</h6>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus numquam totam distinctio voluptas adipisci porro rerum nam itaque repellat?</h6>
+            </div>
+            <div>
+                <h4>MASTER COURSE</h4>
+                <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, beatae?</h6>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus numquam totam distinctio voluptas adipisci porro rerum nam itaque repellat?</h6>
+            </div>
+            <div>
+                <h4>MASTER COURSE</h4>
+                <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, beatae?</h6>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus numquam totam distinctio voluptas adipisci porro rerum nam itaque repellat?</h6>
+            </div>
+            <div>
+                <h4>MASTER COURSE</h4>
+                <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, beatae?</h6>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus numquam totam distinctio voluptas adipisci porro rerum nam itaque repellat?</h6>
+            </div>
+        </div>
+        <div class="flex-container1">
+            <div class="HOVER">
+                <h3>CLASS STARTS</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, suscipit reiciendis eos error rem est ipsa accusamus aliquam? Quas, laboriosam.</h6>
+                <button type="submit" style="border:2px solid black;border-radius:20px;">Know More</button></div>
+            <div class="HOVER">
+                <h3>CLASS STARTS</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, suscipit reiciendis eos error rem est ipsa accusamus aliquam? Quas, laboriosam.</h6>
+                <button type="submit" style="border:2px solid black;border-radius:20px;">Know More</button></div>
+            <div class="HOVER">
+                <h3>CLASS STARTS</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, suscipit reiciendis eos error rem est ipsa accusamus aliquam? Quas, laboriosam.</h6>
+                <button type="submit" style="border:2px solid black;border-radius:20px;">Know More</button></div>
+            <div class="HOVER">
+                <h3>CLASS STARTS</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, suscipit reiciendis eos error rem est ipsa accusamus aliquam? Quas, laboriosam.</h6>
+                <button type="submit" style="border:2px solid black;border-radius:20px;">Know More</button></div>
+        </div>
+    </div>
+    <div class="course" style="height:100px;width: 95%;margin-left: 2.5%;background: linear-gradient(to bottom right, #fae35e, #d85dfd);z-index:2;">
+        <div class="d-grid gap-4 col-2 mx-auto">
+            <button class="btn btn-primary mt-2" type="button">Browse </button>
+        </div>
+        <div class="text">
+            <span>Explore our wide range of courses</span>
+        </div>
+    </div>
+
+
+
+    <div class="h3" style="margin-left: 5%; margin-top:20px;margin-bottom:20px;">
+        <h3>Carrer Related Program</h3>
+    </div>
+    <div class="course" id="lower" style="height:270px;width: 95%;margin-left: 2.5%;background: linear-gradient(to bottom right, #fae35e, #d85dfd);z-index:2;">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="splide">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="col-sm-4 splide__slide m-2">
+                                <div class="card bg-light text-black">
+                                    <div class="card-body">
+                                        <h2 class="card-title"><i><b>Python</b></i></h2>
+                                        <p class="card-text">PYTHON PROGRAMMING </p>
+                                        <p class="card-text">PYTHON PROGRAMMING CLASSES WILL START FROM 1'st AUGUST.</p>
+                                        <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+                </div>
+                </div>
+                <div class="col-sm-4 splide__slide m-2">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Analytics</h5>
+                            <p class="card-text">DATA ANALYTICS</p>
+                            <p class="card-text">DATA ANALYTICS Classes will start from 1'st August.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 splide__slide m-2">
+                    <div class="card bg-light text-black">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Developer</h5>
+                            <p class="card-text">WEB Developer </p>
+                            <p class="card-text">WEB Developer Class will start from 1'st August</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 splide__slide m-2">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud Computing</h5>
+                            <p class="card-text">Cloud Computing </p>
+                            <p class="card-text">Cloud Computing classes will start from 1'st August.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 splide__slide m-2">
+                    <div class="card bg-light text-black">
+                        <div class="card-body">
+                            <h5 class="card-title">Big Data</h5>
+                            <p class="card-text">BIG-DATA </p>
+                            <p class="card-text">BIG-DATA classes will start from 1'st August</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 splide__slide m-2">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Big Data</h5>
+                            <p class="card-text">BIG-DATA </p>
+                            <p class="card-text">BIG-DATA classes will start from 1'st August</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 splide__slide m-2">
+                    <div class="card bg-light text-black">
+                        <div class="card-body">
+                            <h5 class="card-title">Big Data</h5>
+                            <p class="card-text">BIG-DATA </p>
+                            <p class="card-text">BIG-DATA classes will start from 1'st August</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 splide__slide m-2">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Big Data</h5>
+                            <p class="card-text">BIG-DATA </p>
+                            <p class="card-text">BIG-DATA classes will start from 1'st August</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 splide__slide m-2">
+                    <div class="card bg-light text-black">
+                        <div class="card-body">
+                            <h5 class="card-title">Big Data</h5>
+                            <p class="card-text">BIG-DATA </p>
+                            <p class="card-text">BIG-DATA classes will start from 1'st August</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="bekar">
+                    <div id="square">
+                        <label id="text3"><b><i>Discover Top Categories</i></b></label>
+                        <div id="box1">
+                            <img style="height: 100%; width: 100%;" src="images1.png">
+                        </div>
+                        <div id="box2">
+                            <img style="height: 130px; width: 130px;" src="images2.jpg">
+                        </div>
+                        <div id="box3">
+                            <img style="height: 130px; width: 130px;" src="images3.png">
+                        </div>
+                        <div id="box4">
+                            <img style="height: 130px; width: 130px;" src="images4.png">
+                        </div>
+                        <div id="box5">
+                            <img style="height: 130px; width: 130px;" src="images5.png">
+                        </div>
+                        <div id="box6">
+                            <img style="height: 130px; width: 130px;" src="images6.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="container10">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card d-flex mx-auto">
+                                <div class="card-image">
+                                    <img class="img-fluid d-flex mx-auto" src="Shahnawaz.jpg">
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-title">SHAHNAWAZ KHAN</div>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
+                                </div>
+                                <div class="footer">
+                                    <span id="name">DESIGNER<br></span>
+                                    <span id="position">CEO of <a href="#">Clash-Of-Clan</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card d-flex mx-auto">
+                                <div class="card-image">
+                                    <img class="img-fluid d-flex mx-auto" src="Shubham.png">
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-title">SHUBHAM SINGH</div>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
+                                </div>
+                                <div class="footer">
+                                    <span id="name">PYTHON PROGRAMMER<br></span>
+                                    <span id="position">CEO of <a href="#">Freefire</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card d-flex mx-auto ">
+                                <div class="card-image">
+                                    <img class="img-fluid d-flex mx-auto" src="Hunter.png">
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-title">HUNTER RAJPUT</div>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
+                                </div>
+                                <div class="footer">
+                                    <span id="name">DEVELOPER<br></span>
+                                    <span id="position">UX Designer at <a href="#">PUBG</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bannerlast" style="margin-left: 15%;">
+                    <img src="fathers-day-sale.jpeg" alt="">
+                </div>
+                <div class="container-fluid">
+                    <div class="container p-5">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 mb-4">
+                                <div class="card card1 h-100">
+                                    <div class="card-body">
+
+                                        <h5 class="card-title">Basic</h5>
+                                        <small class='text-muted'>Individual</small>
+                                        <br><br>
+                                        <span class="h2">$8</span>/month
+                                        <br><br>
+                                        <div class="d-grid my-3">
+                                            <button class="btn btn-outline-dark btn-block">Select</button>
+                                        </div>
+                                        <ul>
+                                            <li>Cras justo odio</li>
+                                            <li>Dapibus ac facilisis in</li>
+                                            <li>Vestibulum at eros</li>
+
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 mb-4">
+                                <div class="card card2 h-100">
+                                    <div class="card-body">
+
+                                        <h5 class="card-title">Standard</h5>
+                                        <small class='text-muted'>Small Business</small>
+                                        <br><br>
+                                        <span class="h2">$20</span>/month
+                                        <br><br>
+                                        <div class="d-grid my-3">
+                                            <button class="btn btn-outline-dark btn-block">Select</button>
+                                        </div>
+                                        <ul>
+                                            <li>Cras justo odio</li>
+                                            <li>Dapibus ac facilisis in</li>
+                                            <li>Vestibulum at eros</li>
+
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 mb-4">
+                                <div class="card card3 h-100">
+                                    <div class="card-body">
+
+                                        <h5 class="card-title">Premium</h5>
+                                        <small class='text-muted'>Large Company</small>
+                                        <br><br>
+                                        <span class="h2">$40</span>/month
+                                        <br><br>
+                                        <div class="d-grid my-3">
+                                            <button class="btn btn-outline-dark btn-block">Select</button>
+                                        </div>
+                                        <ul>
+                                            <li>Cras justo odio</li>
+                                            <li>Dapibus ac facilisis in</li>
+                                            <li>Vestibulum at eros</li>
+
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Remove the container if you want to extend the Footer to full width. -->
+                    <div class="">
+                        <!-- Footer -->
+                        <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+                            <!-- Grid container -->
+                            <div class="container p-4 pb-0">
+                                <!-- Section: Links -->
+                                <section class="">
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <!-- Grid column -->
+                                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                                HUNTER WORKS
+                                            </h6>
+                                            <p>
+                                                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <hr class="w-100 clearfix d-md-none" />
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                                            <p>
+                                                <a class="text-white">Bootstrap</a>
+                                            </p>
+                                            <p>
+                                                <a class="text-white">WordPress</a>
+                                            </p>
+                                            <p>
+                                                <a class="text-white">BrandFlow</a>
+                                            </p>
+                                            <p>
+                                                <a class="text-white">Bootstrap Angular</a>
+                                            </p>
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <hr class="w-100 clearfix d-md-none" />
+
+                                        <!-- Grid column -->
+                                        <hr class="w-100 clearfix d-md-none" />
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                                            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                                            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                                            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                                            <!-- Facebook -->
+                                            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i
+                ></a>
+
+                                            <!-- Twitter -->
+                                            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i
+                ></a>
+
+                                            <!-- Google -->
+                                            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i
+                ></a>
+
+                                            <!-- Instagram -->
+                                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i
+                ></a>
+
+                                            <!-- Linkedin -->
+                                            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i
+                ></a>
+                                            <!-- Github -->
+                                            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i
+                ></a>
+                                        </div>
+                                    </div>
+                                    <!--Grid row-->
+                                </section>
+                                <!-- Section: Links -->
+                            </div>
+                            <!-- Grid container -->
+
+                            <!-- Copyright -->
+                            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                                © 2020 Copyright:
+                                <a class="text-white" href="#">Hunter</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+<script>
+    var splide = new Splide('.splide', {
+        type: 'loop',
+        perPage: 3,
+        rewind: true,
+
+    });
+
+    splide.mount();
+</script>
+
+</html>

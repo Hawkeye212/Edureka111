@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item img {
+    height: 400px;
+}
+
+.container-fluid a {
+    color: black;
+}
+
+.course {
+    height: 500px;
+    width: 95%;
+    margin-left: 2.5%;
+    background: linear-gradient(to bottom right, #8992fa, #fc7878);
+}
+
+.empty {
+    height: 6px;
+    width: 100%;
+    background-color: #8992fa;
+    margin-bottom: 5px;
+}
+
+#navbarSupportedContent a:hover {
+    transform: scale(1.1);
+    background-color: cadetblue;
+    border-radius: 10px;
+}
+
+#navbarSupportedContent a {
+    margin-right: 40px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    /* background-color: DodgerBlue; */
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: 30px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    height: 300px;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-wrap: nowrap;
+    /* background-color: rgb(255, 30, 188); */
+    z-index: 2;
+    margin-top: -360px;
+}
+
+.flex-container1>div {
+    background-color: #f70c0c;
+    width: 300px;
+    margin: 30px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    height: 300px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.flex-container1 .HOVER:hover {
+    opacity: 1;
+}
+
+.text {
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.card-title {
+    background: linear-gradient(to bottom right, #5efa6b, #fd5de8);
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 20px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.bekar {
+    height: 200px;
+    width: 95%;
+    background-color: #5dd0fd;
+    margin: 2.5%;
+}
+
+#square {
+    height: 200px;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+#text3 {
+    font-size: 30px;
+    margin-left: 25px;
+}
+
+#box1 {
+    height: 130px;
+    width: 10%;
+    background-color: blueviolet;
+    margin-left: 30px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 10px gray;
+    cursor: pointer;
+}
+
+#box1:hover {
+    transform: scale(1.1);
+}
+
+#box2 {
+    height: 130px;
+    width: 10%;
+    background-color: blue;
+    float: left;
+    margin-left: 200px;
+    margin-top: -130px;
+    box-shadow: 10px 10px 10px gray;
+    cursor: pointer;
+}
+
+#box2:hover {
+    transform: scale(1.1);
+}
+
+#box3 {
+    height: 130px;
+    width: 10%;
+    background-color: violet;
+    float: left;
+    margin-left: 400px;
+    margin-top: -130px;
+    box-shadow: 10px 10px 10px gray;
+    cursor: pointer;
+}
+
+#box3:hover {
+    transform: scale(1.1);
+}
+
+#box4 {
+    height: 130px;
+    width: 10%;
+    background-color: green;
+    float: left;
+    margin-left: 600px;
+    margin-top: -130px;
+    box-shadow: 10px 10px 10px gray;
+    cursor: pointer;
+}
+
+#box4:hover {
+    transform: scale(1.1);
+}
+
+#box5 {
+    height: 130px;
+    width: 10%;
+    background-color: orange;
+    float: left;
+    margin-left: 800px;
+    margin-top: -130px;
+    box-shadow: 10px 10px 10px gray;
+    cursor: pointer;
+}
+
+#box5:hover {
+    transform: scale(1.1);
+}
+
+#box6 {
+    height: 130px;
+    width: 10%;
+    background-color: yellow;
+    float: left;
+    margin-left: 1000px;
+    margin-top: -130px;
+    box-shadow: 10px 10px 10px gray;
+    cursor: pointer;
+}
+
+#box6:hover {
+    transform: scale(1.1);
+}
+
+.container10 {
+    max-width: 85%;
+    margin-left: 5%;
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0px -10px 0px rgb(151, 248, 6);
+}
+
+@media(max-width:767px) {
+    .card {
+        margin: 1rem 0.7rem 1rem;
+        max-width: 80vw;
+    }
+}
+
+.container10 img {
+    width: 6.2rem;
+    border-radius: 5rem;
+    margin: 1.3rem auto 1rem auto;
+}
+
+.col-md-4 {
+    padding: 0 0.5rem;
+}
+
+.card-title {
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: 'IM Fell French Canon SC';
+}
+
+.card-text {
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+    color: rgb(82, 81, 81);
+    line-height: 1.4rem;
+}
+
+.footer {
+    border-top: none;
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 2rem 0 1.4rem 0;
+    font-family: 'Varela Round';
+}
+
+#name {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#position {
+    font-size: 0.7rem;
+}
+
+a {
+    color: rgb(151, 248, 6);
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(151, 248, 6);
+}
+
+.card1:hover {
+    background: #00ffb6;
+    border: 1px solid #00ffb6;
+}
+
+.card1:hover .list-group-item {
+    background: #00ffb6 !important
+}
+
+.card2:hover {
+    background: #00C9FF;
+    border: 1px solid #00C9FF;
+}
+
+.card2:hover .list-group-item {
+    background: #00C9FF !important
+}
+
+.card3:hover {
+    background: #ff95e9;
+    border: 1px solid #ff95e9;
+}
+
+.card3:hover .list-group-item {
+    background: #ff95e9 !important
+}
+
+.card:hover .btn-outline-dark {
+    color: white;
+    background: #212529;
+}
+
+
+/* dropdown */
+
+.dropbtn1 {
+    background-color: #04aa6d00;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.dropdown10 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content10 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content10 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content10 a:hover {
+    background-color: #ddd;
+}
+
+.dropdown10:hover .dropdown-content10 {
+    display: block;
+}
+
+.dropdown10:hover .dropbtn1 {
+    background-color: #3e8e4100;
+    transform: scale(1.1);
+}
